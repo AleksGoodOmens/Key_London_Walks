@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220616173713">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220617004844">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,17 +14,19 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header data-scroll="70" data-scroll-show class="header">
 			<div class="header__container">
 				<a href="#home" class="header-logo__box">
-					<img class="header-logo__logo" src="img/Header/logo.svg" alt="Logo">
+					<div class="header-logo__logo">
+						<img img-svg src="img/Header/logo.svg" alt="">
+					</div>
 					<p class="header-logo__name">Key london Walks</p>
 				</a>
 				<div class="header__menu menu">
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item active">
+							<li class="menu__item">
 								<a href="#home" class="menu__link">
 									<div class="icon-header _icon-Home "></div>
 									<div class="menu__link-text">Home</div>
@@ -276,20 +278,26 @@
 				</div>
 			</section>
 
+			<!-- //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\\ -->
 
+			<!-- //!Card03 -->
 
-			<br>
-			<br>
+			<!-- //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\\ -->
 
-			<br>
-
-			<br>
-
-			<br>
-
-			<br>
-
-			<br>
+			<section class="about" id="about">
+				<div class="about__container about-body">
+					<div class="about-body__title page-title">About us</div>
+					<div class="about-body__logo">
+						<div class="about-body__logo-box"><img src="img/about/logo.svg" alt="Key London Walks"><span>Key <br> London <br> Walks</span></div>
+					</div>
+					<div class="about-body__text">
+						<p><span class="red">Key London Walks</span> it's a business stablished in 2019 by Mina.</p>
+						<p>Design and organise walking tours focusing on North London.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio odio cursus malesuada pharetra fermentum imperdiet scelerisque gravida elementum. Et pellentesque tempus suspendisse facilisis ut tortor et vitae neque. Dignissim ultrices nam turpis sit ut ac. Erat semper ultrices fringilla integer augue posuere neque feugiat pellentesque.
+						</p>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -331,25 +339,25 @@
 				<div class="footer__mobile mobile-footer">
 					<ul class="mobile-footer__list">
 						<li class="mobile-footer__item active">
-							<a href="#" class="mobile-footer__link">
+							<a href="#home" class="mobile-footer__link">
 								<div class="mobile-footer__icon _icon-Home "></div>
 								<div class="mobile-footer__text">Home</div>
 							</a>
 						</li>
 						<li class="mobile-footer__item">
-							<a href="#" class="mobile-footer__link">
+							<a href="#card3" class="mobile-footer__link">
 								<div class="mobile-footer__icon _icon-Tours"></div>
 								<div class="mobile-footer__text">Tours</div>
 							</a>
 						</li>
 						<li class="mobile-footer__item">
-							<a href="#" class="mobile-footer__link">
+							<a href="tel:020333377777" class="mobile-footer__link">
 								<div class="mobile-footer__icon _icon-Contacts"></div>
 								<div class="mobile-footer__text">Contacts</div>
 							</a>
 						</li>
 						<li class="mobile-footer__item">
-							<a href="#" class="mobile-footer__link">
+							<a href="https://www.eventbrite.com/" target="_blank" class="mobile-footer__link">
 								<div class="mobile-footer__icon _icon-qrcode"></div>
 								<div class="mobile-footer__text">Tickets</div>
 							</a>
@@ -371,7 +379,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220616173713"></script>
+	<script src="js/app.min.js?_v=20220617004844"></script>
 </body>
 
 </html>

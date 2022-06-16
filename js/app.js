@@ -39,15 +39,15 @@
     for (let t = 0; t < this.mediaQueries.length; t++) {
       const n = this.mediaQueries[t],
         i = String.prototype.split.call(n, ","),
-        r = window.matchMedia(i[0]),
-        o = i[1],
+        o = window.matchMedia(i[0]),
+        r = i[1],
         a = Array.prototype.filter.call(this.оbjects, function (e) {
-          return e.breakpoint === o;
+          return e.breakpoint === r;
         });
-      r.addListener(function () {
-        e.mediaHandler(r, a);
+      o.addListener(function () {
+        e.mediaHandler(o, a);
       }),
-        this.mediaHandler(r, a);
+        this.mediaHandler(o, a);
     }
   }),
     (e.prototype.mediaHandler = function (e, t) {
@@ -148,7 +148,7 @@
           }, e);
       }
     },
-    r = (e = 500) => {
+    o = (e = 500) => {
       let t = document.querySelector("body");
       if (n) {
         let i = document.querySelectorAll("[data-lp]");
@@ -169,9 +169,9 @@
           }, e);
       }
     };
-  let o = !1;
+  let r = !1;
   setTimeout(() => {
-    if (o) {
+    if (r) {
       let e = new Event("windowScroll");
       window.addEventListener("scroll", function (t) {
         document.dispatchEvent(e);
@@ -197,7 +197,7 @@
         e.addEventListener("click", function (e) {
           n &&
             (((e = 500) => {
-              document.documentElement.classList.contains("lock") ? i(e) : r(e);
+              document.documentElement.classList.contains("lock") ? i(e) : o(e);
             })(),
             document.documentElement.classList.toggle("menu-open"));
         });
@@ -210,5 +210,37 @@
         }
         window.addEventListener("resize", e), e();
       }
+    })(),
+    (function () {
+      r = !0;
+      const e = document.querySelector("header.header"),
+        t = e.hasAttribute("data-scroll-show"),
+        n = e.dataset.scrollShow ? e.dataset.scrollShow : 500,
+        i = e.dataset.scroll ? e.dataset.scroll : 1;
+      let o,
+        a = 0;
+      document.addEventListener("windowScroll", function (r) {
+        const s = window.scrollY;
+        clearTimeout(o),
+          s >= i
+            ? (!e.classList.contains("_header-scroll") &&
+                e.classList.add("_header-scroll"),
+              t &&
+                (s > a
+                  ? e.classList.contains("_header-show") &&
+                    e.classList.remove("_header-show")
+                  : !e.classList.contains("_header-show") &&
+                    e.classList.add("_header-show"),
+                (o = setTimeout(() => {
+                  !e.classList.contains("_header-show") &&
+                    e.classList.add("_header-show");
+                }, n))))
+            : (e.classList.contains("_header-scroll") &&
+                e.classList.remove("_header-scroll"),
+              t &&
+                e.classList.contains("_header-show") &&
+                e.classList.remove("_header-show")),
+          (a = s <= 0 ? 0 : s);
+      });
     })();
 })();
