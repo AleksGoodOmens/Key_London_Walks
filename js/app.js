@@ -40,14 +40,14 @@
       const n = this.mediaQueries[t],
         i = String.prototype.split.call(n, ","),
         o = window.matchMedia(i[0]),
-        a = i[1],
-        r = Array.prototype.filter.call(this.оbjects, function (e) {
-          return e.breakpoint === a;
+        r = i[1],
+        a = Array.prototype.filter.call(this.оbjects, function (e) {
+          return e.breakpoint === r;
         });
       o.addListener(function () {
-        e.mediaHandler(o, r);
+        e.mediaHandler(o, a);
       }),
-        this.mediaHandler(o, r);
+        this.mediaHandler(o, a);
     }
   }),
     (e.prototype.mediaHandler = function (e, t) {
@@ -169,9 +169,9 @@
           }, e);
       }
     };
-  let a = !1;
+  let r = !1;
   setTimeout(() => {
-    if (a) {
+    if (r) {
       let e = new Event("windowScroll");
       window.addEventListener("scroll", function (t) {
         document.dispatchEvent(e);
@@ -182,8 +182,35 @@
       navigator.clipboard.writeText("http://localhost:8080/"),
         share.classList.add("copied"),
         setTimeout(() => share.classList.remove("copied"), 2e3);
-    }),
-    (window.FLS = !0),
+    });
+  const a = document.querySelectorAll("._anim-items");
+  if (a.length > 0) {
+    function s() {
+      for (let e = 0; e < a.length; e++) {
+        const t = a[e],
+          n = t.offsetHeight,
+          i = l(t).top,
+          o = 4;
+        let r = window.innerHeight - n / o;
+        n > window.innerHeight &&
+          (r = window.innerHeight - window.innerHeight / o),
+          pageYOffset > i - r && pageYOffset < i + n
+            ? t.classList.add("_animate")
+            : t.classList.remove("_animate");
+      }
+    }
+    function l(e) {
+      const t = e.getBoundingClientRect(),
+        n = window.pageXOffset || document.documentElement.scrollLeft,
+        i = window.pageYOffset || document.documentElement.scrollTop;
+      return { top: t.top + i, left: t.left + n };
+    }
+    window.addEventListener("scroll", s),
+      setTimeout(() => {
+        s();
+      }, 300);
+  }
+  (window.FLS = !0),
     (function (e) {
       let t = new Image();
       (t.onload = t.onerror =
@@ -217,21 +244,21 @@
       }
     })(),
     (function () {
-      a = !0;
+      r = !0;
       const e = document.querySelector("header.header"),
         t = e.hasAttribute("data-scroll-show"),
         n = e.dataset.scrollShow ? e.dataset.scrollShow : 500,
         i = e.dataset.scroll ? e.dataset.scroll : 1;
       let o,
-        r = 0;
-      document.addEventListener("windowScroll", function (a) {
+        a = 0;
+      document.addEventListener("windowScroll", function (r) {
         const s = window.scrollY;
         clearTimeout(o),
           s >= i
             ? (!e.classList.contains("_header-scroll") &&
                 e.classList.add("_header-scroll"),
               t &&
-                (s > r
+                (s > a
                   ? e.classList.contains("_header-show") &&
                     e.classList.remove("_header-show")
                   : !e.classList.contains("_header-show") &&
@@ -245,7 +272,7 @@
               t &&
                 e.classList.contains("_header-show") &&
                 e.classList.remove("_header-show")),
-          (r = s <= 0 ? 0 : s);
+          (a = s <= 0 ? 0 : s);
       });
     })();
 })();

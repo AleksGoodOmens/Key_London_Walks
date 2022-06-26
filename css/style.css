@@ -277,6 +277,50 @@ section {
   padding: 25px 0 25px 0;
 }
 
+._animationLeft {
+  transform: translate(-120%, 0px);
+  opacity: 0;
+  transition: all 0.8s;
+}
+._animationLeft._animate {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+._animationRight {
+  transform: translate(120%, 0px);
+  opacity: 0;
+  transition: all 0.8s;
+}
+._animationRight._animate {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+._animationDown {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s;
+}
+._animationDown._animate {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+._animationRed {
+  transform: scale(0) rotate(360deg);
+  border-radius: 100%;
+  overflow: hidden;
+  transition: all 1s ease-out;
+  background-color: #ad0202;
+}
+._animationRed._animate {
+  transform: scale(1);
+  opacity: 1;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
 .header {
   position: absolute;
   width: 100%;
@@ -737,7 +781,15 @@ section {
 .landing .item-landing__link {
   align-self: center;
   margin-top: 2.625rem;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
   font-size: 0.9375rem;
+}
+.landing .item-landing__link._animate {
+  transform: scale(1);
+  opacity: 1;
+  transition: all 0.8s ease 0.2s;
 }
 @media (min-width: 47.99875em) {
   .landing .item-landing__link {
@@ -796,6 +848,14 @@ section {
   font-size: 1.5rem;
   flex: 0 1 110px;
   line-height: 115%;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+.landing .item-landing01 .title-h1__name._animate {
+  transform: translate(0px, 0%);
+  opacity: 1;
+  transition: all 0.8s ease 0.2s;
 }
 @media (min-width: 47.99875em) {
   .landing .item-landing01 .title-h1 {
@@ -804,6 +864,13 @@ section {
   .landing .item-landing01 .title-h1__logo {
     flex: 0 0 95px;
     height: 179px;
+    transform: translate(-120%, 0);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+  }
+  .landing .item-landing01 .title-h1__logo._animate {
+    transform: translate(0%, 0px);
+    opacity: 1;
   }
   .landing .item-landing01 .title-h1__logo img {
     object-fit: contain;
@@ -815,6 +882,13 @@ section {
 }
 .landing .item-landing02 {
   flex: 0 1 55%;
+  transform: translate(120%, 0);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+.landing .item-landing02._animate {
+  transform: translate(0%, 0px);
+  opacity: 1;
 }
 @media (min-width: 61.99875em) {
   .landing .item-landing02 {
@@ -923,6 +997,16 @@ section {
 .card01 {
   position: relative;
   margin-bottom: 3.125rem;
+}
+.card01__title {
+  display: none;
+}
+@media (min-width: 47.99875em) {
+  .card01__title {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+  }
 }
 .card01__body {
   border-radius: 1.0625rem;
@@ -1105,6 +1189,7 @@ section {
   color: rgba(0, 0, 0, 0.6);
   text-shadow: 0 0.3125rem 5px;
   padding: 1.0625rem 0 1.0625rem 1.25rem;
+  text-align: end;
 }
 @media (max-width: 61.99875em) {
   .card02__copyright {
@@ -1148,6 +1233,7 @@ section {
 .card02 .body-card02__copyright {
   font-size: 0.8125rem;
   padding: 0.375rem;
+  text-align: end;
   color: rgba(0, 0, 0, 0.6);
 }
 @media (min-width: 61.99875em) {
@@ -1324,12 +1410,10 @@ section {
   grid-column: 1/4;
   padding: 0.625rem 0.625rem 1.875rem 0.625rem;
   box-shadow: 0px 3px 4px 6px rgba(0, 0, 0, 0.1), 0px 3px 4px 3px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
   display: flex;
   flex-direction: column;
   gap: 0.4375rem;
   text-align: center;
-  transition: all 0.5s;
 }
 @media (min-width: 29.99875em) {
   .card03 .item-card03 {
