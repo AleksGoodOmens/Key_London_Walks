@@ -40,14 +40,14 @@
       const n = this.mediaQueries[t],
         i = String.prototype.split.call(n, ","),
         o = window.matchMedia(i[0]),
-        r = i[1],
-        a = Array.prototype.filter.call(this.оbjects, function (e) {
-          return e.breakpoint === r;
+        a = i[1],
+        r = Array.prototype.filter.call(this.оbjects, function (e) {
+          return e.breakpoint === a;
         });
       o.addListener(function () {
-        e.mediaHandler(o, a);
+        e.mediaHandler(o, r);
       }),
-        this.mediaHandler(o, a);
+        this.mediaHandler(o, r);
     }
   }),
     (e.prototype.mediaHandler = function (e, t) {
@@ -169,15 +169,20 @@
           }, e);
       }
     };
-  let r = !1;
+  let a = !1;
   setTimeout(() => {
-    if (r) {
+    if (a) {
       let e = new Event("windowScroll");
       window.addEventListener("scroll", function (t) {
         document.dispatchEvent(e);
       });
     }
   }, 0),
+    (share.onclick = () => {
+      navigator.clipboard.writeText("http://localhost:8080/"),
+        share.classList.add("copied"),
+        setTimeout(() => share.classList.remove("copied"), 2e3);
+    }),
     (window.FLS = !0),
     (function (e) {
       let t = new Image();
@@ -212,21 +217,21 @@
       }
     })(),
     (function () {
-      r = !0;
+      a = !0;
       const e = document.querySelector("header.header"),
         t = e.hasAttribute("data-scroll-show"),
         n = e.dataset.scrollShow ? e.dataset.scrollShow : 500,
         i = e.dataset.scroll ? e.dataset.scroll : 1;
       let o,
-        a = 0;
-      document.addEventListener("windowScroll", function (r) {
+        r = 0;
+      document.addEventListener("windowScroll", function (a) {
         const s = window.scrollY;
         clearTimeout(o),
           s >= i
             ? (!e.classList.contains("_header-scroll") &&
                 e.classList.add("_header-scroll"),
               t &&
-                (s > a
+                (s > r
                   ? e.classList.contains("_header-show") &&
                     e.classList.remove("_header-show")
                   : !e.classList.contains("_header-show") &&
@@ -240,7 +245,7 @@
               t &&
                 e.classList.contains("_header-show") &&
                 e.classList.remove("_header-show")),
-          (a = s <= 0 ? 0 : s);
+          (r = s <= 0 ? 0 : s);
       });
     })();
 })();

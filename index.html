@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220617095418">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220626142859">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,129 +14,134 @@
 
 <body>
 	<div class="wrapper">
-		<header data-scroll="70" data-scroll-show="5000" class="header">
+		<header data-scroll="50" data-scroll-show class="header">
 			<div class="header__container">
-				<a href="#home" class="header-logo__box">
-					<div class="header-logo__logo">
-						<img img-svg src="img/Header/logo.svg" alt="">
-					</div>
-					<p class="header-logo__name">Key london Walks</p>
-				</a>
-				<div class="header__menu menu">
-					<button type="button" class="menu__icon icon-menu"><span></span></button>
-					<nav class="menu__body">
-						<ul class="menu__list">
-							<li class="menu__item">
-								<a href="#home" class="menu__link">
-									<div class="icon-header _icon-Home "></div>
-									<div class="menu__link-text">Home</div>
+				<div class="header__wrapp">
+					<a href="#home" class="header-logo__box">
+						<div class="header-logo__logo -ibg">
+							<img img-svg src="img/Header/logo.svg" alt="">
+						</div>
+						<p class="header-logo__name">Key london Walks</p>
+					</a>
+					<div class="header__menu menu">
+						<!-- <button type="button" class="menu__icon icon-menu"><span></span></button> -->
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#home" class="menu__link">
+										<div class="icon-header _icon-Home "></div>
+										<div class="menu__link-text">Home</div>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a href="#card01" class="menu__link">
+										<div class="icon-header _icon-Mark"></div>
+										<div class="menu__link-text">About us</div>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a href="#card01" class="menu__link">
+										<div class="icon-header _icon-Tours"></div>
+										<div class="menu__link-text">Tours</div>
+									</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="#card03" class="menu__link">
+										<div class="icon-header _icon-qrcode"></div>
+										<div class="menu__link-text">Tickets</div>
+									</a>
+								</li>
+								<li class="menu__item">
+									<button class="menu__link" id="share">
+										<div class="icon-header _icon-Share"></div>
+										<div class="menu__link-text">Share</div>
+									</button>
+								</li>
+							</ul>
+
+							<!-- <div class="menu__mobile mobile-block">
+						<h2 class="mobile-block__title">TOURS</h2>
+						<ul class="mobile-block__item mobile-block__listOne">
+							<li class="mobile-block__itemLi itemLi-block">
+								<a href="#card01" class="itemLi-block__link">
+									<div class="itemLi-block__keyLogo _icon-Tours"></div>
+									<div class="itemLi-block__text">
+										<div class="itemLi-block__title">King’s Cross</div>
+										<div class="itemLi-block__subtitle">From Gasholders to Google</div>
+									</div>
 								</a>
 							</li>
-							<li class="menu__item">
-								<a href="#card01" class="menu__link">
-									<div class="icon-header _icon-Tours"></div>
-									<div class="menu__link-text">Tours</div>
+							<li class="mobile-block__itemLi itemLi-block">
+								<a href="#card02" class="itemLi-block__link">
+									<div class="itemLi-block__keyLogo _icon-Tours"></div>
+									<div class="itemLi-block__text">
+										<div class="itemLi-block__title">Islington</div>
+										<div class="itemLi-block__subtitle">Islington through the ages </div>
+									</div>
 								</a>
 							</li>
-							<li class="menu__item">
-								<a href="tel:020333377777" class="menu__link">
-									<div class="icon-header _icon-Contacts"></div>
-									<div class="menu__link-text">Contacts</div>
-								</a>
-							</li>
-							<li class="menu__item">
-								<a href="#card03" class="menu__link">
-									<div class="icon-header _icon-qrcode"></div>
-									<div class="menu__link-text">Tickets</div>
-								</a>
-							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link">
-									<div class="icon-header _icon-Share"></div>
-									<div class="menu__link-text">Share</div>
+							<li class="mobile-block__itemLi itemLi-block disable">
+								<a href="#card02" class="itemLi-block__link">
+									<div class="itemLi-block__keyLogo _icon-Tours"></div>
+									<div class="itemLi-block__text">
+										<div class="itemLi-block__title">Up coming</div>
+										<div class="itemLi-block__subtitle"></div>
+									</div>
 								</a>
 							</li>
 						</ul>
-						<div class="menu__mobile mobile-block">
-							<h2 class="mobile-block__title">TOURS</h2>
-							<ul class="mobile-block__item mobile-block__listOne">
-								<li class="mobile-block__itemLi itemLi-block">
-									<a href="#card01" class="itemLi-block__link">
-										<div class="itemLi-block__keyLogo _icon-Tours"></div>
-										<div class="itemLi-block__text">
-											<div class="itemLi-block__title">King’s Cross</div>
-											<div class="itemLi-block__subtitle">From Gasholders to Google</div>
-										</div>
-									</a>
-								</li>
-								<li class="mobile-block__itemLi itemLi-block">
-									<a href="#card02" class="itemLi-block__link">
-										<div class="itemLi-block__keyLogo _icon-Tours"></div>
-										<div class="itemLi-block__text">
-											<div class="itemLi-block__title">Islington</div>
-											<div class="itemLi-block__subtitle">Islington through the ages </div>
-										</div>
-									</a>
-								</li>
-								<li class="mobile-block__itemLi itemLi-block disable">
-									<a href="#card02" class="itemLi-block__link">
-										<div class="itemLi-block__keyLogo _icon-Tours"></div>
-										<div class="itemLi-block__text">
-											<div class="itemLi-block__title">Up coming</div>
-											<!-- <div class="itemLi-block__subtitle"></div> -->
-										</div>
-									</a>
-								</li>
-							</ul>
-							<ul class="mobile-block__item mobile-block__listTwo">
-								<li class="mobile-block__itemLi itemLi-block disable">
-									<a href="#" class="itemLi-block__link">
-										<div class="itemLi-block__keyLogo _icon-Mark"></div>
-										<div class="itemLi-block__text">
-											<div class="itemLi-block__title">About us</div>
-										</div>
-									</a>
-								</li>
-								<li class="mobile-block__itemLi itemLi-block disable">
-									<a href="mailto:contact@keylondonwalks.com" class="itemLi-block__link">
-										<div class="itemLi-block__keyLogo _icon-Mark"></div>
-										<div class="itemLi-block__text">
-											<div class="itemLi-block__title">Send Feedback</div>
-										</div>
-									</a>
-								</li>
-								<li class="mobile-block__itemLi itemLi-block _avfz">
-									<a href="#" class="itemLi-block__link">
-										<div class="itemLi-block__keyLogo _icon-Mail"></div>
-										<div class="itemLi-block__text">
-											<a href="mailto:contact@keylondonwalks.com" class="itemLi-block__title">contact@keylondonwalks.com</a>
-										</div>
-									</a>
-								</li>
-								<li class="mobile-block__itemLi itemLi-block">
-									<a href="#" class="itemLi-block__link">
-										<div class="itemLi-block__keyLogo _icon-Phone"></div>
-										<div class="itemLi-block__text">
-											<a href="tel:020333377777" class="itemLi-block__title">020 3333 77777</a>
-										</div>
-									</a>
-								</li>
-							</ul>
-							<div class="mobile-block__item footer-mobile">
-								<span class="footer-mobile__rights">Copyright © 2022 Key London Walks</span>
-								<div class="footer-mobile__links">
-									<a href="#card03" class="menu__link footer-mobile__item">
-										<div class="icon-header _icon-qrcode "></div>
-										<div class="menu__link-text">Tickets</div>
-									</a>
-									<a href="mailto:contact@keylondonwalks.com" class="menu__link footer-mobile__item">
-										<div class="icon-header _icon-Mail "></div>
-										<div class="menu__link-text">Message</div>
-									</a>
-								</div>
+						<ul class="mobile-block__item mobile-block__listTwo">
+							<li class="mobile-block__itemLi itemLi-block disable">
+								<a href="#" class="itemLi-block__link">
+									<div class="itemLi-block__keyLogo _icon-Mark"></div>
+									<div class="itemLi-block__text">
+										<div class="itemLi-block__title">About us</div>
+									</div>
+								</a>
+							</li>
+							<li class="mobile-block__itemLi itemLi-block disable">
+								<a href="mailto:contact@keylondonwalks.com" class="itemLi-block__link">
+									<div class="itemLi-block__keyLogo _icon-Mark"></div>
+									<div class="itemLi-block__text">
+										<div class="itemLi-block__title">Send Feedback</div>
+									</div>
+								</a>
+							</li>
+							<li class="mobile-block__itemLi itemLi-block _avfz">
+								<a href="#" class="itemLi-block__link">
+									<div class="itemLi-block__keyLogo _icon-Mail"></div>
+									<div class="itemLi-block__text">
+										<a href="mailto:contact@keylondonwalks.com" class="itemLi-block__title">contact@keylondonwalks.com</a>
+									</div>
+								</a>
+							</li>
+							<li class="mobile-block__itemLi itemLi-block">
+								<a href="#" class="itemLi-block__link">
+									<div class="itemLi-block__keyLogo _icon-Phone"></div>
+									<div class="itemLi-block__text">
+										<a href="tel:020333377777" class="itemLi-block__title">020 3333 77777</a>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<div class="mobile-block__item footer-mobile">
+							<span class="footer-mobile__rights">Copyright © 2022 Key London Walks</span>
+							<div class="footer-mobile__links">
+								<a href="#card03" class="menu__link footer-mobile__item">
+									<div class="icon-header _icon-qrcode "></div>
+									<div class="menu__link-text">Tickets</div>
+								</a>
+								<a href="mailto:contact@keylondonwalks.com" class="menu__link footer-mobile__item">
+									<div class="icon-header _icon-Mail "></div>
+									<div class="menu__link-text">Message</div>
+								</a>
 							</div>
 						</div>
-					</nav>
+					</div> -->
+
+						</nav>
+					</div>
 				</div>
 
 
@@ -149,7 +154,12 @@
 				<div class="landing__container">
 					<div class="landing__items">
 						<div class="landing__item item-landing item-landing01">
-							<h1 class="item-landing__title page-title">Explore the heart of England.</h1>
+							<h1><a class="title-h1 page-title" href="#home">
+									<div class="title-h1__logo -ibg">
+										<img img-svg src="img/Header/logo.svg" alt="">
+									</div>
+									<p class="title-h1__name">Key london Walks</p>
+								</a></h1>
 							<div class="item-landing__subtitle">Visit the rich and remarkable past that makes up this thriving London hub.</div>
 							<a href="#card01" class="item-landing__link link-button">explore</a>
 						</div>
@@ -159,6 +169,46 @@
 					</div>
 				</div>
 			</section>
+
+
+			<!-- //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\\ -->
+
+			<!-- //!About -->
+
+			<!-- //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\\ -->
+
+			<section class="about" id="about">
+				<div class="about__container about-body">
+					<div class="about-body__title page-title">About us</div>
+					<div class="about-body__logo">
+						<div class="about-body__logo-box"><img src="img/about/logo.svg" alt="Key London Walks"><span>Key <br> London <br> Walks</span></div>
+					</div>
+					<div class="about-body__text">
+						<p><span class="red">Key London Walks</span> it's a business stablished in 2019 by Mina.</p>
+						<p>
+							Design and organise walking tours focusing on North London.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio odio cursus malesuada pharetra fermentum imperdiet scelerisque gravida elementum. Et pellentesque tempus suspendisse facilisis ut tortor et vitae neque. Dignissim ultrices nam turpis sit ut ac. Erat semper ultrices fringilla integer augue posuere neque feugiat pellentesque.
+						</p>
+					</div>
+					<div class="about-body__lists lists-about">
+						<ul class="lists-about__ul">
+							<li class="lists-about__li">
+								<a href="https://www.instagram.com/" target="_blank" class="_icon-Instagram"></a>
+							</li>
+							<li class="lists-about__li">
+								<a href="https://www.facebook.com/" target="_blank" class="_icon-Facebook"></a>
+							</li>
+						</ul>
+						<ul class="lists-about__ul">
+							<li class="lists-about__li">
+								<a href="mailto:contact@keylondonwalks.com" class="_icon-Mail">contact@keylondonwalks.com</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			</section>
+
+
 			<!-- //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\\ -->
 
 			<!-- //!Card01 -->
@@ -167,20 +217,21 @@
 			<section class="card01" id="card01">
 				<div class="card01__container">
 					<div class="card01__body body-card01">
+						<div class="body-card01__title page-title">
+							from Gasworks <br> to Google
+						</div>
 						<div class="body-card01__img -ibg">
 							<picture><source srcset="img/Card01/1.webp" type="image/webp"><img src="img/Card01/1.jpg" alt="Gasholders"></picture>
 						</div>
 						<div class="body-card01__copyright">Image © copyright</div>
 						<div class="body-card01__content content-card01">
 							<div class="content-card01__title page-title">
-								King's Cross <br> walk
+								from Gasworks to Google
 							</div>
 							<div class="content-card01__subtitle">
-								From Gasholders <br> to Google
+								The life and times of King`s Cross
 							</div>
-							<div class="content-card01__text">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio odio cursus malesuada pharetra fermentum imperdiet scelerisque gravida elementum. Et pellentesque tempus suspendisse facilisis ut tortor et vitae neque. Dignissim ultrices nam turpis sit ut ac. Erat semper ultrices fringilla integer augue posuere neque feugiat pellentesque.
-							</div>
+							<div class="content-card01__text">Join us on an historical tour of King`s Cross! From gasworks to present day Google, The tour will explore the rich and remarkable past that makes up this thriving London hub. From railways and radicals to an industrial past of brassworks and bone crushing. Hear about livings made from quail and grain and lives lived by coal and canal, the ice trade and the notorious vice trade! A place of dance raves among rundown Victorian remnants rubbing shoulders with stunning Georgian Architecture….. all within the heart of King`s Cross.</div>
 							<div class="content-card01__keys">
 								<div class="_icon-Duration">Duration 90 min</div>
 								<div class="_icon-Distance">Distance 1 km</div>
@@ -204,18 +255,19 @@
 				<div class="card02__container">
 					<div class="card02__body body-card02">
 
-
+						<div class="body-card02__title page-title">
+							Georgian terraces
+							to gentrification
+						</div>
 						<div class="body-card02__content content-card02">
 							<div class="content-card02__title page-title">
-								Islington
-								<br> walk
+								Georgian terraces <br>
+								to gentrification
 							</div>
 							<div class="content-card02__subtitle">
-								Islington through <br> the ages
+								The life and times of Islington
 							</div>
-							<div class="content-card02__text">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio odio cursus malesuada pharetra fermentum imperdiet scelerisque gravida elementum. Et pellentesque tempus suspendisse facilisis ut tortor et vitae neque. Dignissim ultrices nam turpis sit ut ac. Erat semper ultrices fringilla integer augue posuere neque feugiat pellentesque.
-							</div>
+							<div class="content-card02__text">Join us on an historical tour of King`s Cross! From gasworks to present day Google, The tour will explore the rich and remarkable past that makes up this thriving London hub. From railways and radicals to an industrial past of brassworks and bone crushing. Hear about livings made from quail and grain and lives lived by coal and canal, the ice trade and the notorious vice trade! A place of dance raves among rundown Victorian remnants rubbing shoulders with stunning Georgian Architecture….. all within the heart of King`s Cross.</div>
 							<div class="content-card02__keys">
 								<div class="_icon-Duration">Duration 180 min</div>
 								<div class="_icon-Distance">Distance 2 km</div>
@@ -254,47 +306,6 @@
 							<div class="item-card03__price">£14.00</div>
 							<a target="_blank" href="https://www.eventbrite.com/" class="item-card03__link-button link-button">buy ticket</a>
 						</div>
-						<div class="item-card03">
-							<div class="item-card03__img -ibg">
-								<picture><source srcset="img/Card03/2.webp" type="image/webp"><img src="img/Card03/2.jpg" alt="Family"></picture>
-							</div>
-							<div class="item-card03__amount">Family</div>
-							<div class="item-card03__name">King’s Cross Walk</div>
-							<div class="item-card03__discription">Ticket for <span>3 people</span>.</div>
-							<div class="item-card03__price">£36.00</div>
-							<a target="_blank" href=" https://www.eventbrite.com/" class="item-card03__link-button link-button">buy ticket</a>
-						</div>
-						<div class="item-card03">
-							<div class="item-card03__img -ibg">
-								<picture><source srcset="img/Card03/3.webp" type="image/webp"><img src="img/Card03/3.jpg" alt="Group"></picture>
-							</div>
-							<div class="item-card03__amount">Group</div>
-							<div class="item-card03__name">King’s Cross Walk</div>
-							<div class="item-card03__discription">Ticket for <span>10 person</span>.</div>
-							<div class="item-card03__price">£100.00</div>
-							<a target="_blank" href="https://www.eventbrite.com/" class="item-card03__link-button link-button">buy ticket</a>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\\ -->
-
-			<!-- //!Card03 -->
-
-			<!-- //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\\ -->
-
-			<section class="about" id="about">
-				<div class="about__container about-body">
-					<div class="about-body__title page-title">About us</div>
-					<div class="about-body__logo">
-						<div class="about-body__logo-box"><img src="img/about/logo.svg" alt="Key London Walks"><span>Key <br> London <br> Walks</span></div>
-					</div>
-					<div class="about-body__text">
-						<p><span class="red">Key London Walks</span> it's a business stablished in 2019 by Mina.</p>
-						<p>Design and organise walking tours focusing on North London.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio odio cursus malesuada pharetra fermentum imperdiet scelerisque gravida elementum. Et pellentesque tempus suspendisse facilisis ut tortor et vitae neque. Dignissim ultrices nam turpis sit ut ac. Erat semper ultrices fringilla integer augue posuere neque feugiat pellentesque.
-						</p>
 					</div>
 				</div>
 			</section>
@@ -304,44 +315,50 @@
 
 				<div class="footer__desktop desktop-footer">
 
-					<ul class="desktop-footer__list">
-						<li class="footer-desktop-list__itemLi itemLi-footer-desktop desktop-footer__copyright"">
-						Layout by Mario Busato and Alex Gomeniuk 2022 Key London Walks © Copyright
-				</li>
-			</ul>
-			<ul class=" desktop-footer__list">
-						<li class="footer-desktop-list__itemLi itemLi-footer-desktop">
-							<a class="itemLi-footer-desktop__link _icon-Mail" href="mailto:contact@keylondonwalks.com"><span class="itemLi-footer-desktop__text">contact@keylondonwalks.com</span></a>
-						</li>
-						<li class="footer-desktop-list__itemLi itemLi-footer-desktop">
-							<a class="itemLi-footer-desktop__link _icon-Phone" href="tel:020333377777"><span class="itemLi-footer-desktop__text">020 3333 77777</span></a>
-						</li>
-					</ul>
-					<ul class="desktop-footer__list">
-						<li class="footer-desktop-list__itemLi itemLi-footer-desktop">
-							<a href="https://www.instagram.com/" target="_blank" class="itemLi-footer-desktop__link _icon-Instagram"></a>
-						</li>
-						<li class="footer-desktop-list__itemLi itemLi-footer-desktop">
-							<a href="https://www.facebook.com/" target="_blank" class="itemLi-footer-desktop__link _icon-Facebook"></a>
-						</li>
-					</ul>
-					<ul class="desktop-footer__list">
-						<li class="footer-desktop-list__itemLi itemLi-footer-desktop">
-							<a href="#" class="itemLi-footer-desktop__link _icon-Mark disable"> <span>About us</span></a>
-						</li>
-						<li class="footer-desktop-list__itemLi footer-desktop-list">
-							<a href="mailto:contact@keylondonwalks.com" class="itemLi-footer-desktop__link _icon-Mark disable"> <span>Send Feedback</span></a>
-						</li>
-					</ul>
+					<div class="desktop-footer__item">
+						<ul class="desktop-footer__list">
+							<li class="footer-desktop-list__itemLi itemLi-footer-desktop desktop-footer__copyright"">
+							Layout by Mario Busato and Alex Gomeniuk <br> 2022 Key London Walks © Copyright
+					</li>
+				</ul>
+				<ul class=" desktop-footer__list">
+							<li class="footer-desktop-list__itemLi itemLi-footer-desktop">
+								<a class="itemLi-footer-desktop__link _icon-Mail" href="mailto:contact@keylondonwalks.com"><span class="itemLi-footer-desktop__text">contact@keylondonwalks.com</span></a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="desktop-footer__item justifySelfEnd">
+						<ul class="desktop-footer__list">
+							<li class="footer-desktop-list__itemLi itemLi-footer-desktop">
+								<a href="https://www.instagram.com/" target="_blank" class="itemLi-footer-desktop__link _icon-Instagram"></a>
+							</li>
+							<li class="footer-desktop-list__itemLi itemLi-footer-desktop">
+								<a href="https://www.facebook.com/" target="_blank" class="itemLi-footer-desktop__link _icon-Facebook"></a>
+							</li>
+						</ul>
+						<ul class="desktop-footer__list">
+							<li class="footer-desktop-list__itemLi itemLi-footer-desktop desktop-footer__about">
+								<a href="#" class="itemLi-footer-desktop__link _icon-Mark disable"> <span>About us</span></a>
+							</li>
+
+						</ul>
+					</div>
 
 				</div>
 
 				<div class="footer__mobile mobile-footer">
 					<ul class="mobile-footer__list">
-						<li class="mobile-footer__item active">
+						<li class="mobile-footer__item">
 							<a href="#home" class="mobile-footer__link">
 								<div class="mobile-footer__icon _icon-Home "></div>
 								<div class="mobile-footer__text">Home</div>
+							</a>
+						</li>
+						<li class="mobile-footer__item">
+							<a href="#card01" class="mobile-footer__link">
+								<div class="mobile-footer__icon _icon-Mark"></div>
+								<div class="mobile-footer__text">About us</div>
 							</a>
 						</li>
 						<li class="mobile-footer__item">
@@ -351,16 +368,16 @@
 							</a>
 						</li>
 						<li class="mobile-footer__item">
-							<a href="tel:020333377777" class="mobile-footer__link">
-								<div class="mobile-footer__icon _icon-Contacts"></div>
-								<div class="mobile-footer__text">Contacts</div>
-							</a>
-						</li>
-						<li class="mobile-footer__item">
 							<a href="https://www.eventbrite.com/" target="_blank" class="mobile-footer__link">
 								<div class="mobile-footer__icon _icon-qrcode"></div>
 								<div class="mobile-footer__text">Tickets</div>
 							</a>
+						</li>
+						<li class="mobile-footer__item">
+							<button class="menu__link" id="share">
+								<div class="mobile-footer__icon _icon-Share"></div>
+								<div class="mobile-footer__text">Share</div>
+							</button>
 						</li>
 					</ul>
 				</div>
@@ -379,7 +396,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220617095418"></script>
+	<script src="js/app.min.js?_v=20220626142859"></script>
 </body>
 
 </html>
